@@ -7,4 +7,7 @@ data=json.load(file)
 data_content=[]
 data_url=[]
 data_title=[]
-data_category=[]
+for i in range(len(data)):
+    data_content.append(data[""+i]["content"])
+    data_url.append(data[""+i]["url"])
+    
